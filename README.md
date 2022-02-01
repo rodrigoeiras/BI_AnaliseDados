@@ -1,6 +1,7 @@
 # Instituto INFNET
 ### Bloco: B.I. e Análise de Dados
-#### Disciplina: Fundamentos de Business Intelligence e Análise de Dados
+#### Disciplina 1: Fundamentos de Business Intelligence e Análise de Dados
+#### Disciplina 2: Modelagem de Dados
 
 ### Dias de Aula (Zoom)
 #### Quartas e Sextas: 07:00 às 09:15
