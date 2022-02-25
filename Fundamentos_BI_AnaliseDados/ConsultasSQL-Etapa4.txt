@@ -1,0 +1,13 @@
+USE classicmodels;
+SELECT lastName FROM employees;
+SELECT lastName,firstName,jobTitle FROM employees;
+SELECT employeeNumber,firstName,lastName,jobTitle,extension,email,officeCode,reportsTo FROM employees;
+SELECT * FROM employees;
+SELECT * FROM employees WHERE firstName = "Jeff";
+SELECT * FROM employees WHERE firstName = "Diane" UNION SELECT * FROM employees WHERE firstName = "Jeff";
+SELECT customerName,country FROM customers WHERE country = "USA" OR country = "France";
+SELECT customerName,country,creditLimit FROM customers WHERE (country = "USA" OR country = "France") AND creditLimit > 100000;
+SELECT customerName,country,state FROM customers WHERE country = "USA" AND state = "CA";
+SELECT customerName,country,state,creditLimit FROM customers WHERE country = "USA" AND state = "CA" AND creditLimit > 100000;
+SELECT productCode as "Code",productName as "Name",textDescription "Description" FROM products t1 INNER JOIN productlines t2 ON t1.productLine = t2.productLine;
+SELECT t1.orderNumber,t1.status,SUM(quantityOrdered * priceEach) FROM orders t1 INNER JOIN orderdetails t2 ON  t1.OrderNumber = t2.orderNumber GROUP BY orderNumber;
